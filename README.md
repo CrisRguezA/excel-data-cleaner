@@ -14,9 +14,10 @@
 **Flujo de trabajo de ejemplo desde datos en bruto hasta resultados finales**  
 **Example workflow from raw input to clean output**
 
-![Pipeline](../docs/screenshots/pipeline.png)  
-![Validation](../docs/screenshots/validation.png)  
-![Clean Results](../docs/screenshots/results.png)
+![Pipeline](docs/screenshots/pipeline.png) 
+![Load](docs/screenshots/load.png) 
+![Validation](docs/screenshots/validation.png)  
+![Clean Results](docs/screenshots/results.png)
 
 ---
 
