@@ -1,0 +1,593 @@
+{
+  "shape": {
+    "total_columns": 14,
+    "total_rows": 320,
+    "shape": [
+      320,
+      14
+    ],
+    "columns": [
+      " ID Venta ",
+      "cliente",
+      "Cliente",
+      "fecha venta",
+      "Fecha_Venta",
+      "producto ",
+      "tipo_madera",
+      "certificacion",
+      "cantidad_m3 ",
+      "precio_m3",
+      "importe ",
+      "estado",
+      "comercial",
+      "pais"
+    ],
+    "missing_per_column": {
+      " ID Venta ": 0,
+      "cliente": 67,
+      "Cliente": 230,
+      "fecha venta": 0,
+      "Fecha_Venta": 171,
+      "producto ": 0,
+      "tipo_madera": 0,
+      "certificacion": 65,
+      "cantidad_m3 ": 57,
+      "precio_m3": 0,
+      "importe ": 121,
+      "estado": 0,
+      "comercial": 0,
+      "pais": 0
+    },
+    "total_missing_values": 711,
+    "missing_values_found": true
+  },
+  "column_names": {
+    "total_columns": 14,
+    "issues_found": true,
+    "n_issues": 5,
+    "columns_with_issues": [
+      {
+        "column": " ID Venta ",
+        "flags": [
+          "leading_space",
+          "trailing_space",
+          "internal_space"
+        ]
+      },
+      {
+        "column": "fecha venta",
+        "flags": [
+          "internal_space"
+        ]
+      },
+      {
+        "column": "producto ",
+        "flags": [
+          "trailing_space"
+        ]
+      },
+      {
+        "column": "cantidad_m3 ",
+        "flags": [
+          "trailing_space"
+        ]
+      },
+      {
+        "column": "importe ",
+        "flags": [
+          "trailing_space"
+        ]
+      }
+    ]
+  },
+  "duplicates_after_normalization": {
+    "total_columns": 14,
+    "duplicates_found": true,
+    "n_duplicates": 2,
+    "duplicates": [
+      {
+        "column": "Cliente",
+        "normalized": "cliente",
+        "conflicts_with": "cliente"
+      },
+      {
+        "column": "Fecha_Venta",
+        "normalized": "fecha_venta",
+        "conflicts_with": "fecha venta"
+      }
+    ],
+    "mapping": [
+      {
+        "original": " ID Venta ",
+        "normalized": "id_venta"
+      },
+      {
+        "original": "cliente",
+        "normalized": "cliente"
+      },
+      {
+        "original": "Cliente",
+        "normalized": "cliente"
+      },
+      {
+        "original": "fecha venta",
+        "normalized": "fecha_venta"
+      },
+      {
+        "original": "Fecha_Venta",
+        "normalized": "fecha_venta"
+      },
+      {
+        "original": "producto ",
+        "normalized": "producto"
+      },
+      {
+        "original": "tipo_madera",
+        "normalized": "tipo_madera"
+      },
+      {
+        "original": "certificacion",
+        "normalized": "certificacion"
+      },
+      {
+        "original": "cantidad_m3 ",
+        "normalized": "cantidad_m3"
+      },
+      {
+        "original": "precio_m3",
+        "normalized": "precio_m3"
+      },
+      {
+        "original": "importe ",
+        "normalized": "importe"
+      },
+      {
+        "original": "estado",
+        "normalized": "estado"
+      },
+      {
+        "original": "comercial",
+        "normalized": "comercial"
+      },
+      {
+        "original": "pais",
+        "normalized": "pais"
+      }
+    ]
+  },
+  "missing_values": {
+    "total_columns": 14,
+    "total_rows": 320,
+    "missing_values_found": true,
+    "columns_with_missings": [
+      {
+        "column": " ID Venta ",
+        "non_null_count": 320,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "cliente",
+        "non_null_count": 253,
+        "null_count": 67,
+        "null_percentage": 20.94
+      },
+      {
+        "column": "Cliente",
+        "non_null_count": 90,
+        "null_count": 230,
+        "null_percentage": 71.88
+      },
+      {
+        "column": "fecha venta",
+        "non_null_count": 320,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "Fecha_Venta",
+        "non_null_count": 149,
+        "null_count": 171,
+        "null_percentage": 53.44
+      },
+      {
+        "column": "producto ",
+        "non_null_count": 320,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "tipo_madera",
+        "non_null_count": 320,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "certificacion",
+        "non_null_count": 255,
+        "null_count": 65,
+        "null_percentage": 20.31
+      },
+      {
+        "column": "cantidad_m3 ",
+        "non_null_count": 263,
+        "null_count": 57,
+        "null_percentage": 17.81
+      },
+      {
+        "column": "precio_m3",
+        "non_null_count": 320,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "importe ",
+        "non_null_count": 199,
+        "null_count": 121,
+        "null_percentage": 37.81
+      },
+      {
+        "column": "estado",
+        "non_null_count": 320,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "comercial",
+        "non_null_count": 320,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "pais",
+        "non_null_count": 320,
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    ]
+  },
+  "empty_rows": {
+    "total_columns": 14,
+    "total_rows": 320,
+    "empty_rows_found": false,
+    "n_empty_rows": 0,
+    "empty_rows": []
+  },
+  "sales_id_uniqueness": {
+    "column": " ID Venta ",
+    "total_columns": 14,
+    "total_rows": 320,
+    "duplicates_found": true,
+    "n_duplicates_values": 40,
+    "n_rows_with_duplicates": 40,
+    "duplicated_values": [
+      {
+        "value": "1005",
+        "repetitions": 2
+      },
+      {
+        "value": "1009",
+        "repetitions": 2
+      },
+      {
+        "value": "1045",
+        "repetitions": 2
+      },
+      {
+        "value": "1057",
+        "repetitions": 2
+      },
+      {
+        "value": "1109",
+        "repetitions": 2
+      },
+      {
+        "value": "1148",
+        "repetitions": 2
+      },
+      {
+        "value": "1152",
+        "repetitions": 2
+      },
+      {
+        "value": "1165",
+        "repetitions": 2
+      },
+      {
+        "value": "1175",
+        "repetitions": 2
+      },
+      {
+        "value": "1182",
+        "repetitions": 2
+      },
+      {
+        "value": "1196",
+        "repetitions": 2
+      },
+      {
+        "value": "1203",
+        "repetitions": 2
+      },
+      {
+        "value": "1211",
+        "repetitions": 2
+      },
+      {
+        "value": "1218",
+        "repetitions": 2
+      },
+      {
+        "value": "1221",
+        "repetitions": 2
+      },
+      {
+        "value": "1226",
+        "repetitions": 2
+      },
+      {
+        "value": "1233",
+        "repetitions": 2
+      },
+      {
+        "value": "1237",
+        "repetitions": 2
+      },
+      {
+        "value": "1266",
+        "repetitions": 2
+      },
+      {
+        "value": "1289",
+        "repetitions": 2
+      }
+    ]
+  },
+  "categorical_validation": {
+    "columns_requested": [
+      "cliente",
+      "Cliente",
+      "producto ",
+      "tipo_madera",
+      "certificacion",
+      "estado",
+      "comercial",
+      "pais"
+    ],
+    "columns_checked": [
+      "cliente",
+      "Cliente",
+      "producto ",
+      "tipo_madera",
+      "certificacion",
+      "estado",
+      "comercial",
+      "pais"
+    ],
+    "missing_columns": [],
+    "total_columns_checked": 8,
+    "total_rows": 320,
+    "categorical_values_found": true,
+    "categorical_value_summary": [
+      {
+        "column": "cliente",
+        "unique_values": [
+          "Construcciones Norte",
+          "Muebles Pérez Polo",
+          "Obras y Casas",
+          "Promociones Sur",
+          "Reformas López"
+        ],
+        "n_uniques_values": 5,
+        "value_frequencies": {
+          "Construcciones Norte": 62,
+          "Muebles Pérez Polo": 60,
+          "Promociones Sur": 46,
+          "Reformas López": 43,
+          "Obras y Casas": 42
+        }
+      },
+      {
+        "column": "Cliente",
+        "unique_values": [
+          "Construcciones Norte",
+          "Muebles Pérez Polo",
+          "Obras y Casas",
+          "Promociones Sur",
+          "Reformas López"
+        ],
+        "n_uniques_values": 5,
+        "value_frequencies": {
+          "Promociones Sur": 24,
+          "Reformas López": 20,
+          "Construcciones Norte": 18,
+          "Muebles Pérez Polo": 15,
+          "Obras y Casas": 13
+        }
+      },
+      {
+        "column": "producto ",
+        "unique_values": [
+          "CLT",
+          "Viga",
+          "Viga laminada"
+        ],
+        "n_uniques_values": 3,
+        "value_frequencies": {
+          "Viga laminada": 112,
+          "Viga": 107,
+          "CLT": 101
+        }
+      },
+      {
+        "column": "tipo_madera",
+        "unique_values": [
+          "Abeto",
+          "PINO",
+          "Pino",
+          "abeto"
+        ],
+        "n_uniques_values": 4,
+        "value_frequencies": {
+          "abeto": 94,
+          "Pino": 81,
+          "PINO": 73,
+          "Abeto": 72
+        }
+      },
+      {
+        "column": "certificacion",
+        "unique_values": [
+          "CE",
+          "FSC",
+          "PEFC"
+        ],
+        "n_uniques_values": 3,
+        "value_frequencies": {
+          "CE": 94,
+          "FSC": 84,
+          "PEFC": 77
+        }
+      },
+      {
+        "column": "estado",
+        "unique_values": [
+          "CERRADO",
+          "Cerrada",
+          "cerrado",
+          "ok",
+          "pendiente"
+        ],
+        "n_uniques_values": 5,
+        "value_frequencies": {
+          "ok": 75,
+          "Cerrada": 73,
+          "pendiente": 63,
+          "CERRADO": 60,
+          "cerrado": 49
+        }
+      },
+      {
+        "column": "comercial",
+        "unique_values": [
+          "Ana",
+          "Juan"
+        ],
+        "n_uniques_values": 2,
+        "value_frequencies": {
+          "Ana": 169,
+          "Juan": 151
+        }
+      },
+      {
+        "column": "pais",
+        "unique_values": [
+          "ES",
+          "España",
+          "Madrid"
+        ],
+        "n_uniques_values": 3,
+        "value_frequencies": {
+          "ES": 122,
+          "España": 101,
+          "Madrid": 97
+        }
+      }
+    ]
+  },
+  "date_validation": {
+    "columns_checked": [
+      "fecha venta",
+      "Fecha_Venta"
+    ],
+    "missing_columns": [],
+    "total_rows": 320,
+    "total_columns_checked": 2,
+    "total_unparseable_values": 245,
+    "date_validation_by_column": {
+      "fecha venta": {
+        "total_non_null": 320,
+        "null_original": 0,
+        "null_after_parse": 245,
+        "unparseable_values": 245
+      },
+      "Fecha_Venta": {
+        "total_non_null": 149,
+        "null_original": 171,
+        "null_after_parse": 171,
+        "unparseable_values": 0
+      }
+    }
+  },
+  "numeric_validation": {
+    "columns_checked": [
+      "importe ",
+      "cantidad_m3 ",
+      "precio_m3"
+    ],
+    "missing_columns": [],
+    "total_rows": 320,
+    "total_columns_checked": 3,
+    "total_unparseable_values": 0,
+    "total_zero_values": 64,
+    "total_negative_values": 0,
+    "numeric_validation_by_column": {
+      "importe ": {
+        "total_non_null": 199,
+        "null_original": 121,
+        "null_after_parse": 121,
+        "unparseable_values": 0,
+        "zero_count": 0,
+        "negative_count": 0,
+        "valid_positive_values": 199
+      },
+      "cantidad_m3 ": {
+        "total_non_null": 263,
+        "null_original": 57,
+        "null_after_parse": 57,
+        "unparseable_values": 0,
+        "zero_count": 64,
+        "negative_count": 0,
+        "valid_positive_values": 199
+      },
+      "precio_m3": {
+        "total_non_null": 320,
+        "null_original": 0,
+        "null_after_parse": 0,
+        "unparseable_values": 0,
+        "zero_count": 0,
+        "negative_count": 0,
+        "valid_positive_values": 320
+      }
+    }
+  },
+  "invalid_business_rules": {
+    "rules_checked": [
+      "null_sales_id",
+      "null_or_invalid_sales_date",
+      "null_or_non_positive_importe",
+      "estado not in valid set"
+    ],
+    "total_rows": 320,
+    "total_rules_checked": 4,
+    "total_rule_violation": 366,
+    "invalid_rules_count": {
+      "null_sales_id": {
+        "rows": 0,
+        "status": "pass"
+      },
+      "null_or_invalid_sales_date": {
+        "rows": 245,
+        "status": "fail"
+      },
+      "null_or_non_positive_importe": {
+        "rows": 121,
+        "status": "fail"
+      },
+      "estado not in valid set": {
+        "rows": 0,
+        "status": "pass"
+      }
+    }
+  }
+}

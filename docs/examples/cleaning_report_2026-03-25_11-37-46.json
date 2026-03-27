@@ -1,0 +1,190 @@
+{
+  "shape": {
+    "original_rows": 320,
+    "cleaned_rows": 185,
+    "original_columns": 14,
+    "cleaned_columns": 12,
+    "rows_removed_total": 135
+  },
+  "merged_columns": {
+    "pairs_defined": 2,
+    "pairs_merged": 2,
+    "merged_pairs": [
+      {
+        "primary_column": "cliente",
+        "secondary_column": "Cliente",
+        "strategy": "combine_first"
+      },
+      {
+        "primary_column": "fecha venta",
+        "secondary_column": "Fecha_Venta",
+        "strategy": "combine_first"
+      }
+    ],
+    "dropped_secondary_columns": [
+      "Cliente",
+      "Fecha_Venta"
+    ]
+  },
+  "normalized_column_names": {
+    "total_columns": 12,
+    "renamed_columns": 5,
+    "mapping": [
+      {
+        "original": " ID Venta ",
+        "normalized": "id_venta"
+      },
+      {
+        "original": "cliente",
+        "normalized": "cliente"
+      },
+      {
+        "original": "fecha venta",
+        "normalized": "fecha_venta"
+      },
+      {
+        "original": "producto ",
+        "normalized": "producto"
+      },
+      {
+        "original": "tipo_madera",
+        "normalized": "tipo_madera"
+      },
+      {
+        "original": "certificacion",
+        "normalized": "certificacion"
+      },
+      {
+        "original": "cantidad_m3 ",
+        "normalized": "cantidad_m3"
+      },
+      {
+        "original": "precio_m3",
+        "normalized": "precio_m3"
+      },
+      {
+        "original": "importe ",
+        "normalized": "importe"
+      },
+      {
+        "original": "estado",
+        "normalized": "estado"
+      },
+      {
+        "original": "comercial",
+        "normalized": "comercial"
+      },
+      {
+        "original": "pais",
+        "normalized": "pais"
+      }
+    ],
+    "changed_columns": [
+      {
+        "original": " ID Venta ",
+        "normalized": "id_venta"
+      },
+      {
+        "original": "fecha venta",
+        "normalized": "fecha_venta"
+      },
+      {
+        "original": "producto ",
+        "normalized": "producto"
+      },
+      {
+        "original": "cantidad_m3 ",
+        "normalized": "cantidad_m3"
+      },
+      {
+        "original": "importe ",
+        "normalized": "importe"
+      }
+    ]
+  },
+  "empty_rows": {
+    "empty_rows_removed": 0
+  },
+  "duplicates_by_id_venta": {
+    "duplicates_removed": 20
+  },
+  "text_standardization": {
+    "title_case_columns_processed": [
+      "cliente",
+      "comercial",
+      "tipo_madera"
+    ],
+    "estado_standardized": true,
+    "pais_standardized": true
+  },
+  "certificacion_fill": {
+    "column_found": true,
+    "nulls_filled": 61,
+    "fill_value": "Sin certificación"
+  },
+  "date_parsing": {
+    "column_found": true,
+    "column": "fecha_venta",
+    "parsed_to_datetime": true,
+    "null_after_parse": 0
+  },
+  "numeric_parsing": {
+    "columns_checked": [
+      "importe",
+      "cantidad_m3",
+      "precio_m3"
+    ],
+    "missing_columns": [],
+    "total_columns_checked": 3,
+    "numeric_parsing_by_column": {
+      "importe": {
+        "null_original": 115,
+        "null_after_parse": 115,
+        "unparseable_values": 0,
+        "assumed_input_format": "english"
+      },
+      "cantidad_m3": {
+        "null_original": 54,
+        "null_after_parse": 54,
+        "unparseable_values": 0,
+        "assumed_input_format": "english"
+      },
+      "precio_m3": {
+        "null_original": 0,
+        "null_after_parse": 0,
+        "unparseable_values": 0,
+        "assumed_input_format": "english"
+      }
+    },
+    "numeric_input_assumption": "english"
+  },
+  "importe_recalculation": {
+    "recovered_rows": 61
+  },
+  "filtered_invalid_rows": {
+    "total_removed": 115,
+    "breakdown": {
+      "null_id_venta": 0,
+      "null_fecha_venta": 0,
+      "null_importe": 54,
+      "zero_or_neg_importe": 61
+    }
+  },
+  "nulls_after_cleaning": {
+    "missing_per_column": {
+      "id_venta": 0,
+      "cliente": 29,
+      "fecha_venta": 0,
+      "producto": 0,
+      "tipo_madera": 0,
+      "certificacion": 0,
+      "cantidad_m3": 0,
+      "precio_m3": 0,
+      "importe": 0,
+      "estado": 0,
+      "comercial": 0,
+      "pais": 0
+    },
+    "total_missing_values": 29
+  }
+}
